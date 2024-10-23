@@ -28,7 +28,8 @@ So we ordered four wheels off Amazon for $8 and they should be here in two days.
 
 Having all of these extra drawers will make using my tools much more inviting.
 
-While the toolbox is empty, 
+While the toolbox is empty, I figured it’s a good time to clean it further because it’ll probably never be empty again. So I took each out and am using some grease on where the drawers are like connecting to the box cause it’s pretty dirty under there.
+
 
 
 This is the new setup! 
