@@ -28,4 +28,8 @@ So we ordered four wheels off Amazon for $8 and they should be here in two days.
 
 Having all of these extra drawers will make using my tools much more inviting.
 
+While the toolbox is empty, 
+
+
 This is the new setup! 
+
