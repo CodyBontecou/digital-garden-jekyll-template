@@ -1,10 +1,8 @@
 ---
-title: A new note
+title: Putter’s new garage
 ---
 
 Written from my iPhone.
-
-[[accents]] link
 
 ![Test](https://i.imgur.com/TnnSAII.jpeg)
 
