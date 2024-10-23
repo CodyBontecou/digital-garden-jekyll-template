@@ -2,7 +2,7 @@
 title: A new note
 ---
 
-Written from Obsidian.
+Written from my iPhone.
 
 [[accents]]
 
