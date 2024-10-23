@@ -31,3 +31,8 @@ While the toolbox is empty, I figured it’s a good time to clean it further bec
 ![](https://i.imgur.com/S5HQRFg.jpeg)
 
 ![](https://i.imgur.com/jeQoA2U.jpeg)
+
+Quick bacon break
+
+![](https://i.imgur.com/vdwKY1s.jpeg)
+
