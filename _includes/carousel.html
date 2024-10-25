@@ -1,0 +1,130 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      // First, find the paragraph containing our carousel
+      const paragraphs = Array.from(document.getElementsByTagName('p'));
+
+      paragraphs.forEach(p => {
+          // Convert children to array for easier inspection
+          const children = Array.from(p.childNodes);
+
+          // Look for comments that mark our carousel
+          const hasCarouselStart = children.some(node =>
+              node.nodeType === Node.COMMENT_NODE &&
+              node.textContent.trim() === 'Carousel'
+          );
+
+          const hasCarouselEnd = children.some(node =>
+              node.nodeType === Node.COMMENT_NODE &&
+              node.textContent.trim() === '!Carousel'
+          );
+
+          // If this paragraph contains our carousel markers
+          if (hasCarouselStart && hasCarouselEnd) {
+              console.log('Found carousel paragraph:', p);
+
+              // Get all images in this paragraph
+              const images = Array.from(p.getElementsByTagName('img'));
+              console.log('Carousel images:', images);
+
+              if (images.length > 0) {
+                  // Create carousel structure
+                  const carousel = document.createElement('div');
+                  carousel.className = 'markdown-carousel';
+
+                  const container = document.createElement('div');
+                  container.className = 'markdown-carousel-container';
+
+                  // Add images to carousel
+                  images.forEach(img => {
+                      const slide = document.createElement('div');
+                      slide.className = 'markdown-carousel-slide';
+                      slide.appendChild(img.cloneNode(true));
+                      container.appendChild(slide);
+                  });
+
+                  // Add navigation buttons
+                  const prevBtn = document.createElement('button');
+                  prevBtn.className = 'markdown-carousel-btn prev';
+                  prevBtn.textContent = '←';
+
+                  const nextBtn = document.createElement('button');
+                  nextBtn.className = 'markdown-carousel-btn next';
+                  nextBtn.textContent = '→';
+
+                  // Build carousel
+                  carousel.appendChild(container);
+                  carousel.appendChild(prevBtn);
+                  carousel.appendChild(nextBtn);
+
+                  // Replace the original paragraph
+                  p.parentNode.replaceChild(carousel, p);
+
+                  // Add navigation functionality
+                  let currentIndex = 0;
+
+                  function goToSlide(index) {
+                      currentIndex = index;
+                      container.style.transform = `translateX(-${currentIndex * 100}%)`;
+                  }
+
+                  prevBtn.addEventListener('click', () => {
+                      currentIndex = (currentIndex - 1 + images.length) % images.length;
+                      goToSlide(currentIndex);
+                  });
+
+                  nextBtn.addEventListener('click', () => {
+                      currentIndex = (currentIndex + 1) % images.length;
+                      goToSlide(currentIndex);
+                  });
+              }
+          }
+      });
+  });
+  </script>
+
+  <style>
+  .markdown-carousel {
+      position: relative;
+      max-width: 800px;
+      margin: 2rem auto;
+      overflow: hidden;
+      border: 2px solid #ddd;
+      padding: 10px;
+  }
+
+  .markdown-carousel-container {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+  }
+
+  .markdown-carousel-slide {
+      min-width: 100%;
+      flex-shrink: 0;
+  }
+
+  .markdown-carousel-slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+  }
+
+  .markdown-carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      z-index: 10;
+  }
+
+  .markdown-carousel-btn.prev {
+      left: 10px;
+  }
+
+  .markdown-carousel-btn.next {
+      right: 10px;
+  }
+  </style>

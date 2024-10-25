@@ -1,7 +1,6 @@
 ---
 title: Putter’s new garage
 ---
-
 I have many projects I want to work on, but knowing how difficult it will be to find the tools needed to do it almost always keeps me from actually doing the project.
 
 So, I’ve invested a little bit of money on a new-ish toolbox that I bought for $40 on Facebook Marketplace.
@@ -13,14 +12,13 @@ This toolbox helps tremendously with storage, but it’s still not enough. I was
 My dad gave me the large drawers on the bottom. I used condensed air to clean out any leftover goo and dirt.
 
 ![new garage setup 1](https://i.imgur.com/D6T9ZU4.jpeg)
-
 ![garage setup with putter](https://i.imgur.com/MF6Cflu.jpeg)
 
 It’s much more spacious and useable. I have tons of space and am able to organize, find, and use my tools a lot quicker.
 
 This is just a test setup. The bottom drawer is unable to open because it hits the lip of the garage and it’s a heavy box that’s difficult to move when filled, rendering the remaining storage space barely usable.
 
-The last piece to this puzzle is adding wheels to the bottom of the tool set so that it can move to the left and right, giving access to the storage space on either side. 
+The last piece to this puzzle is adding wheels to the bottom of the tool set so that it can move to the left and right, giving access to the storage space on either side.
 
 We measured that there is a 2in vertical space that the box needs to be elevated by in order to use the bottom drawer.
 
