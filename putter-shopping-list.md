@@ -1,2 +1,3 @@
-- [ ] Magnetic wall/holder for misc metal tools
-- [ ] Wrench organizers
+- [x] Magnetic wall/holder for misc metal tools
+- [x] Wrench organizers
+- [x] drill bits
